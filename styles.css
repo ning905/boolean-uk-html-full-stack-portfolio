@@ -46,6 +46,8 @@ h4 {
 p {
     font-size: 1.2rem;
     line-height: 2rem;
+
+    text-align: justify;
 }
 
 .logo {
@@ -71,7 +73,7 @@ header {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr auto;
-    grid-template-rows: minmax(3rem, auto);
+    grid-template-rows: minmax(2rem, auto);
 
     padding: 1rem 2rem;
 }
@@ -82,10 +84,7 @@ header nav a {
     font-weight: bold;
 }
 
-/* header nav a:hover {
-    color: #E9D5DA;
-} */
-
+header nav a:hover,
 header nav a:visited {
     color: #000B49;
 }
@@ -202,7 +201,6 @@ header nav li:hover {
     padding: 0.5rem 5.5rem;
     color: #FBF8F1;
     background-color: #4C0070;
-    /* border: 0.1rem solid #4C0070; */
     border-radius: 0.3rem;
 }
 
@@ -229,4 +227,74 @@ footer {
 
     background-color: #000B49;
     color: #E9D5DA;
+}
+
+/* Responsive */
+@media screen and (max-width: 1250px) {
+    #portfolio ul {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+        place-items: center;
+    }
+
+    #portfolio ul li {
+        max-width: 600px;
+        min-width: 400px;
+    }    
+}
+
+@media screen and (max-width: 1024px) {
+    .skill-list {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1.8rem;
+    }
+
+    #about-me li,
+    #experience li {
+        min-width: 500px;
+    }
+    
+}
+
+@media screen and (max-width: 750px) {
+    nav ul li {
+        display: none;
+    }
+    
+    #home-page div,
+    #about-me li,
+    #experience li,
+    #portfolio ul li {
+        min-width: 300px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+        font-weight: 900;
+    }
+    
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+    
+    h4 {
+        font-size: 2rem;
+        padding-bottom: 1.2rem;
+    }
+    
+    p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    
+    #portfolio ul {
+        padding: 2rem 2rem;
+    }
 }
