@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+/* Scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Set core body defaults */
 body {
   min-height: 100vh;
