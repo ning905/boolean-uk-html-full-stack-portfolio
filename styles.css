@@ -148,6 +148,28 @@ nav li:hover>* {
   font-style: italic;
 }
 
+.back-to-top {
+  color: #e9d5da;
+  background-color: #8b5fbf;
+
+  border: solid 0.2rem;
+  border-radius: 0.3rem;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  padding: 1rem 1rem;
+
+  position: fixed;
+  bottom: 15%;
+  right: 0;
+}
+
+.back-to-top:hover {
+  color: #4c0070;
+  background-color: #e9d5da;
+}
+
 /* About-me and Experience general layout */
 #about-me>ul,
 #experience ul {
@@ -237,21 +259,6 @@ footer {
   color: #e9d5da;
 }
 
-footer a {
-  color: #e9d5da;
-
-  font-size: 1.3rem;
-  font-weight: bold;
-
-  display: grid;
-  place-items: center;
-  row-gap: 0.5rem;
-}
-
-footer a:hover {
-  color: #fbf8f1;
-}
-
 /* Responsive */
 @media screen and (max-width: 1300px) {
   #portfolio ul {
@@ -323,6 +330,10 @@ footer a:hover {
     line-height: 1.5rem;
   }
 
+  .back-to-top {
+    font-size: 1rem;
+  }
+
   #portfolio ul {
     padding: 2rem 2rem;
   }
@@ -359,6 +370,10 @@ footer a:hover {
   p {
     font-size: 0.8rem;
     line-height: 1.2rem;
+  }
+
+  .back-to-top {
+    font-size: 0.8rem;
   }
 
   .logo {
