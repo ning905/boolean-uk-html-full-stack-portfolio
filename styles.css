@@ -118,7 +118,7 @@ header nav li:hover {
   background-color: #8b5fbf;
 }
 
-nav li:hover > * {
+nav li:hover>* {
   color: #000b49;
 }
 
@@ -142,12 +142,14 @@ nav li:hover > * {
 }
 
 #home-page p span {
-  border-bottom: #000b49 solid 3px;
+  text-decoration: underline;
+  text-decoration-color: #000b49;
+  text-decoration-thickness: 3px;
   font-style: italic;
 }
 
 /* About-me and Experience general layout */
-#about-me > ul,
+#about-me>ul,
 #experience ul {
   padding: 2rem 0;
   list-style: none;
@@ -229,10 +231,25 @@ nav li:hover > * {
 
 /* Footer */
 footer {
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
 
   background-color: #000b49;
   color: #e9d5da;
+}
+
+footer a {
+  color: #e9d5da;
+
+  font-size: 1.3rem;
+  font-weight: bold;
+
+  display: grid;
+  place-items: center;
+  row-gap: 0.5rem;
+}
+
+footer a:hover {
+  color: #fbf8f1;
 }
 
 /* Responsive */
